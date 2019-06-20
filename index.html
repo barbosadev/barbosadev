@@ -50,9 +50,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn btn-outline-primary" onclick="rolar_para('#2')">
-                            <img src="imgs/baixo_branco.png">
-                        </button>
+                        <a href="#2">
+                            <button type="button" class="btn btn-outline-primary">
+                                <img src="imgs/baixo_branco.png">
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -62,9 +64,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn btn-outline-primary" onclick="rolar_para('#1')">
-                            <img src="imgs/cima_branco.png">
-                        </button>
+                        <a href="#1">
+                            <button type="button" class="btn btn-outline-primary">
+                                <img src="imgs/cima_branco.png">
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -94,14 +98,5 @@
                 </div>
             </div>
         </div>
-        
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-        <script>
-            function rolar_para(elemento) {
-                $('html, body').animate({
-                scrollTop: $(elemento).offset().top
-                }, 500);
-            }
-        </script>
     </body>
 </html>
