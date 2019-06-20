@@ -24,20 +24,24 @@
             $(document).ready(function(){
             //Esconde preloader
                 $(window).load(function(){
-                    $('#preloader').fadeOut(0);//1500 é a duração do efeito (1.5 seg)
+                    $('#preloader').fadeOut(1000);//1500 é a duração do efeito (1.5 seg)
                 });    
             });
         </script>
         
     </head>
     <body class="text-center">
-        <div class="flex-align bg_one">
+        
             <div id="preloader">
-                <div class="spinner-grow" role="status">
-                    <span class="sr-only">Loading...</span>
+                <div class="flex-align" style="background-color: ccc;">
+                    <div class="spinner-grow" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
                 </div>
             </div>
 
+
+        <div class="flex-align bg_one">
             <div class="container">
                 <div class="row">
                     <div class="col">
