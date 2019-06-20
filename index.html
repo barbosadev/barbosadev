@@ -2,38 +2,26 @@
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
-            body{ 
-                background: url("imgs/bg4.jpg") center fixed; 
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-size: cover;
-            }
             .img-perfil{ width: 20em; }
             .flex-align{
                 display: flex;
-                height: 80%;
+                height: 100%;
                 align-items: center;
+                margin-bottom: 1em;
             }
-            .cima_baixo{
-                display: flex;
-                height: 10%;
-                align-items: center;
+            .bg_one{
+                background: url("imgs/bg.svg") center fixed; 
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-size: cover;
             }
             h1.efeito {color: white; text-shadow: black 0.1em 0.1em 0.2em}
         </style>
     </head>
     <body class="text-center">
         
-        <div class="cima_baixo" id="1">
+        <div class="flex-align bg_one">
             <div class="container">
-                <div class="row">
-                    <div  class="col">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex-align">
-            <div class="container-fluid">
                 <div class="row">
                     <div class="col">
                         <img src="imgs/perfil.png" class="rounded-circle mx-auto d-block img-perfil" >    
@@ -41,62 +29,41 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <h1 class="display-4 efeito">Hi, I'm Victor Barbosa!</h1>
+                        <h1 class="display-2 efeito">Hello, I am Victor Barbosa!</h1>
+                        <h1 class="display-4">I am a developer :)</h1>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cima_baixo">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <a href="#2">
-                            <button type="button" class="btn btn-outline-primary">
-                                <img src="imgs/baixo_branco.png">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="2" class="cima_baixo">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <a href="#1">
-                            <button type="button" class="btn btn-outline-primary">
-                                <img src="imgs/cima_branco.png">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="flex-align">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="alert alert-primary" role="alert">
-                            <h1 class="display-4">About</h1>
+                    <div class="col">  
+                        <h1 class="display-3">About Me</h1>
+                        <hr>
+                        <h3>
+                            <img src="imgs/about.png">
+                            Name: Victor Barbosa   
+                            <img src="imgs/cake.png">
+                            Age: 20 years old<br/>
+                            <img src="imgs/Local.png">
+                            House: São Caetano do Sul - São Paulo - Brazil
                             <hr>
-                            <h4>
-                                I'm a Brazilian student of system analysis and development at Fatec São Caetano do Sul.
-                            </h4>
-                        </div>
+                            <img src="imgs/formation.png">Education:<br/>
+                            <hr>
+                            <img src="imgs/unchecked.png">System analysis and development (2019 - Currently)<br/>
+                            <img src="imgs/Local.png">Faculdade de Tecnologia de São Caetano do Sul
+                            <hr>
+                            <img src="imgs/checked.png">Computer Technician (2014 - 2018)<br/>
+                            <img src="imgs/Local.png">Instituto Federal de Educação, Ciência e Tecnologia - Campus Cubatão
+                            <hr>
+                            <img src="imgs/checked.png">Computer Technician (2017 - 2018)<br/>
+                            <img src="imgs/Local.png">Etec de Cubatão
+                        </h3>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="cima_baixo" id="1">
-            <div class="container">
-                <div class="row">
-                    <div  class="col">
-                    </div>
-                </div>
-            </div>
-        </div>
     </body>
 </html>
