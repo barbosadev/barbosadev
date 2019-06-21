@@ -28,16 +28,6 @@
             .menu-bg{background-image:-webkit-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-o-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#1C5E91),to(#167699));background-image:linear-gradient(to bottom,#1C5E91 0,#167699 100%);background-repeat:repeat-x;position:absolute;width:100%;height:100%;border-radius:0px;z-index:-1;top:0;left:0;-webkit-transition:.1s;-o-transition:.1s;transition:.1s}
             
         </style>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-            //Esconde preloader
-                $(window).load(function(){
-                    $('#preloader').fadeOut(1000);//1500 é a duração do efeito (1.5 seg)
-                });    
-            });
-        </script>
-        
     </head>
     <body class="text-center">
         
@@ -45,17 +35,17 @@
             <nav class="floating-menu">
                 <ul class="main-menu">
                     <li>
-                        <a href="#1" class="ripple">
+                        <a href="#1" class="ripple" onclick="rolar_para('#1')">
                             <img src="imgs/home.png" class="img_menu">
                         </a>
                     </li>
                     <li>
-                        <a href="#2" class="ripple">
+                        <a href="#2" class="ripple" onclick="rolar_para('#2')">
                             <img src="imgs/about.png" class="img_menu">
                         </a>
                     </li>
                     <li>
-                        <a href="#3" class="ripple">
+                        <a href="#3" class="ripple" onclick="rolar_para('#3')">
                             <img src="imgs/star.png" class="img_menu">
                         </a>
                     </li>
@@ -197,6 +187,19 @@
             </div>
         </div>
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            //Esconde preloader
+                $(window).load(function(){
+                    $('#preloader').fadeOut(1000);//1500 é a duração do efeito (1.5 seg)
+                });    
+            });
+            function rolar_para(elemento) {
+                $('html, body').animate({
+                scrollTop: $(elemento).offset().top
+                }, 700);
+            }
+        </script>
     </body>
 </html>
