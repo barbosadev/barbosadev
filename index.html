@@ -1,13 +1,15 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
         <style>
             .img-perfil{ width: 20em; }
             .flex-align{
                 display: flex;
                 height: 100%;
                 align-items: center;
+            }
+            .img_menu{
+                width: 2em;
             }
             .bg_one{
                 background: url("imgs/bg.svg") center fixed; 
@@ -19,10 +21,14 @@
             .skills{
                 margin-bottom: 2em;
             }
+            .floating-menu{border-radius:100px;z-index:999;padding-top:10px;padding-bottom:10px;left:0;position:fixed;display:inline-block;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+            .main-menu{margin:0;padding-left:0;list-style:none}
+            .main-menu li a{display:block;padding:20px;}
+            .main-menu li a:hover{background:rgba(244,244,244,.3)}
+            .menu-bg{background-image:-webkit-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-o-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#1C5E91),to(#167699));background-image:linear-gradient(to bottom,#1C5E91 0,#167699 100%);background-repeat:repeat-x;position:absolute;width:100%;height:100%;border-radius:0px;z-index:-1;top:0;left:0;-webkit-transition:.1s;-o-transition:.1s;transition:.1s}
+            
         </style>
-        <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js">
-      </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
             //Esconde preloader
@@ -35,6 +41,37 @@
     </head>
     <body class="text-center">
         
+        <main>
+            <nav class="floating-menu">
+                <ul class="main-menu">
+                    <li>
+                        <a href="#1" class="ripple">
+                            <img src="imgs/home.png" class="img_menu">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#2" class="ripple">
+                            <img src="imgs/about.png" class="img_menu">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#3" class="ripple">
+                            <img src="imgs/star.png" class="img_menu">
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#" class="ripple">
+                            <img src="imgs/translate.png" class="img_menu">
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-bg"></div>
+            </nav>
+        </main>
+
+
+
             <div id="preloader">
                 <div class="flex-align" style="background-color: ccc;">
                     <div class="container">
@@ -46,7 +83,7 @@
             </div>
 
 
-        <div class="flex-align bg_one">
+        <div class="flex-align bg_one" id="1">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -61,7 +98,7 @@
                 </div>
             </div>
         </div>        
-        <div class="flex-align">
+        <div class="flex-align" id="2">
             <div class="container">
                 <div class="row">
                     <div class="col">  
@@ -133,9 +170,9 @@
         </div>
 
         
-        <div class="flex-align bg_one">
+        <div class="flex-align bg_one" id="3">
             <div class="container">
-                <div style="background-color: rgba(247, 247, 247, 0.5);" >
+                <div style="background-color: rgba(165, 224, 252, 0.5);" >
                     <div class="row">
                         <div class="col">  
                             <h1 class="display-4">About Me</h1>
@@ -145,13 +182,13 @@
                                 <hr>
                                 <img src="imgs/formation.png"> Education:
                                 <hr>
-                                <img src="imgs/unchecked.png">System analysis and development (2019 - Currently)<br/>
+                                <img src="imgs/unchecked.png">System analysis and development, degree course (2019 - in progress)<br/>
                                 <img src="imgs/local.png">Faculdade de Tecnologia de São Caetano do Sul
                                 <hr>
-                                <img src="imgs/checked.png">Computer Technician (2014 - 2018)<br/>
+                                <img src="imgs/checked.png">Information technology, associate degree (2014 - 2018)<br/>
                                 <img src="imgs/local.png">Instituto Federal de Educação, Ciência e Tecnologia - Campus Cubatão
                                 <hr>
-                                <img src="imgs/checked.png">Computer Technician (2017 - 2018)<br/>
+                                <img src="imgs/checked.png">Information technology, associate degree (2017 - 2018)<br/>
                                 <img src="imgs/local.png">Etec de Cubatão
                             </h3>
                         </div>
