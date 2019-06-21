@@ -1,15 +1,17 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <style>
-            .img-perfil{ width: 20em; }
+            .img-perfil{ width: 300px; }
             .flex-align{
                 display: flex;
                 height: 100%;
                 align-items: center;
             }
             .img_menu{
-                width: 2em;
+                width: 1.5em;
             }
             .bg_one{
                 background: url("imgs/bg.svg") center fixed; 
@@ -21,74 +23,99 @@
             .skills{
                 margin-bottom: 2em;
             }
-            .floating-menu{border-radius:100px;z-index:999;padding-top:10px;padding-bottom:10px;left:0;position:fixed;display:inline-block;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-            .main-menu{margin:0;padding-left:0;list-style:none}
-            .main-menu li a{display:block;padding:20px;}
-            .main-menu li a:hover{background:rgba(244,244,244,.3)}
-            .menu-bg{background-image:-webkit-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-o-linear-gradient(top,#1C5E91 0,#167699 100%);background-image:-webkit-gradient(linear,left top,left bottom,from(#1C5E91),to(#167699));background-image:linear-gradient(to bottom,#1C5E91 0,#167699 100%);background-repeat:repeat-x;position:absolute;width:100%;height:100%;border-radius:0px;z-index:-1;top:0;left:0;-webkit-transition:.1s;-o-transition:.1s;transition:.1s}
-            
+            .sociais{
+                align-content: flex-start; margin: 2px;
+            }
         </style>
     </head>
     <body class="text-center">
-        
-        <main>
-            <nav class="floating-menu">
-                <ul class="main-menu">
-                    <li>
-                        <a href="#1" class="ripple" onclick="rolar_para('#1')">
-                            <img src="imgs/home.png" class="img_menu">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#2" class="ripple" onclick="rolar_para('#2')">
-                            <img src="imgs/about.png" class="img_menu">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#3" class="ripple" onclick="rolar_para('#3')">
-                            <img src="imgs/star.png" class="img_menu">
-                        </a>
-                    </li>
-                    <hr>
-                    <li>
-                        <a href="#" class="ripple">
-                            <img src="imgs/translate.png" class="img_menu">
-                        </a>
-                    </li>
-                </ul>
-                <div class="menu-bg"></div>
-            </nav>
-        </main>
 
-
-
-            <div id="preloader">
-                <div class="flex-align" style="background-color: ccc;">
-                    <div class="container">
-                        <div class="spinner-border text-success" style="width: 20rem; height: 20rem;" role="status">
-                            <span class="sr-only">Loading...</span>
-                        </div>
+        <div id="preloader">
+            <div class="flex-align" style="background-color: ccc;">
+                <div class="container">
+                    <div class="spinner-border text-success" style="width: 20rem; height: 20rem;" role="status">
+                        <span class="sr-only">Loading...</span>
                     </div>
                 </div>
             </div>
+        </div>
 
 
         <div class="flex-align bg_one" id="1">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <img src="imgs/perfil.png" class="rounded-circle mx-auto d-block img-perfil" >    
+                        <img src="imgs/perfil.png" class="img-fluid rounded-circle mx-auto d-block img-perfil" >    
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <h1 class="display-2 efeito">Hi, I'm Victor Barbosa!</h1>
-                        <h1 class="display-4">I'm a developer :)</h1>
+                        <h1 class="display-4 efeito">Hi, I'm Victor Barbosa!</h1>
+                        <h2>I'm a developer :)</h2>
+
+                        <div>
+                            <a href="https://github.com/vldbarbosa" class="text-decoration-none sociais" target="_blank">
+                                <img src="imgs/github_circle.png" alt="GitHub Button">
+                            </a>
+                            <a href="https://twitter.com/_victorldb" class="text-decoration-none sociais" target="_blank">
+                                <img src="imgs/twitter_circle.png" alt="Twitter Button">
+                            </a>
+                            <a href="https://www.linkedin.com/in/victorldb/" class="text-decoration-none sociais" target="_blank">
+                                <img src="imgs/linkedin_circle.png" alt="LinkedIn Button">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+        </div>  
+
+        <div id="3" style="background-color: rgb(219, 218, 218); padding-bottom: 2em;">
+            <div class="container">
+                <div>
+                    <div class="row">
+                        <div class="col">  
+                            <h1 class="display-4">About Me</h1>
+                            <hr>
+                            <h5><i>Hello! My name's Victor Barbosa, I'm 20 years old, 
+                                I'm from Brazil and I live in São Caetano do Sul (SP).
+                            </i></h5>
+                            
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="imgs/fatec.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><img src="imgs/unchecked.png">System analysis and development, degree course</h5>
+                                        <p class="card-text"><img src="imgs/local.png">Faculdade de Tecnologia de São Caetano do Sul</p>
+                                        <p class="card-text"><small class="text-muted">2019 - In progress</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="imgs/federal.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><img src="imgs/checked.png">Information technology, associate degree</h5>
+                                        <p class="card-text"><img src="imgs/local.png">Instituto Federal de Educação, Ciência e Tecnologia - Campus Cubatão</p>
+                                        <p class="card-text"><small class="text-muted">2014 - 2018</small></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="imgs/etec.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><img src="imgs/checked.png">Information technology, associate degree</h5>
+                                        <p class="card-text"><img src="imgs/local.png">Etec de Cubatão</p>
+                                        <p class="card-text"><small class="text-muted">2017 - 2018</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>        
-        <div class="flex-align" id="2">
+        </div>
+    
+
+        <div id="2" style="margin-bottom: 3.6em;">
             <div class="container">
                 <div class="row">
                     <div class="col">  
@@ -96,58 +123,56 @@
                         <hr>
                         <h3>
                             <div class="row">
-                                <div class="col col-sm-6 col-lg-3 skills">
+                                <div class="col col-6 col-md-3 skills">
                                     <img src="imgs/javascript.svg">
                                     <br/>
                                     JavaScript
                                 </div>
-                                <div class="col col-sm-6 col-lg-3">
+                                <div class="col col-6 col-md-3">
                                     <img src="imgs/html.png">
                                     <br/>
                                     HTML5
                                 </div>
-                                <div class="col col-sm-6 col-lg-3 skills">
+                                <div class="col col-6 col-md-3 skills">
                                     <img src="imgs/css.png">
                                     <br/>
                                     CSS3
                                 </div>
-                                <div class="col col-sm-6 col-lg-3">
+                                <div class="col col-6 col-md-3">
                                     <img src="imgs/csharp.png">
                                     <br/>
                                     C Sharp
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col col-sm-6 col-lg-3 skills">
+                                <div class="col col-6 col-md-3 skills">
                                     <img src="imgs/bootstrap.png">
                                     <br/>
                                     Bootstrap
                                 </div>
-                                <div class="col col-sm-6 col-lg-3">
+                                <div class="col col-6 col-md-3">
                                     <img src="imgs/sql.png">
                                     <br/>
                                     SQL
                                 </div>
-                                <div class="col col-sm-6 col-lg-3 skills">
+                                <div class="col col-6 col-md-3 skills">
                                     <img src="imgs/java.png">
                                     <br/>
                                     Java
                                 </div>
-                                <div class="col col-sm-6 col-lg-3">
+                                <div class="col col-6 col-md-3">
                                     <img src="imgs/github.png">
                                     <br/>
                                     GitHub
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col col-sm-12 col-lg-3">
-                                </div>
-                                <div class="col col-sm-6 col-lg-3">
+                                <div class="col col-6 col-md-6">
                                     <img src="imgs/access.png">
                                     <br/>
                                     Access
                                 </div>
-                                <div class="col col-sm-6 col-lg-3">
+                                <div class="col col-6 col-md-6">
                                     <img src="imgs/excel.png">
                                     <br/>
                                     Excel
@@ -159,34 +184,31 @@
             </div>
         </div>
 
-        
-        <div class="flex-align bg_one" id="3">
-            <div class="container">
-                <div style="background-color: rgba(165, 224, 252, 0.5);" >
-                    <div class="row">
-                        <div class="col">  
-                            <h1 class="display-4">About Me</h1>
-                            <hr>
-                            <h3>
-                                <i>Hello! My name's Victor Barbosa, I'm 20 years old, I'm from Brazil and I live in São Caetano do Sul (SP).</i>
-                                <hr>
-                                <img src="imgs/formation.png"> Education:
-                                <hr>
-                                <img src="imgs/unchecked.png">System analysis and development, degree course (2019 - in progress)<br/>
-                                <img src="imgs/local.png">Faculdade de Tecnologia de São Caetano do Sul
-                                <hr>
-                                <img src="imgs/checked.png">Information technology, associate degree (2014 - 2018)<br/>
-                                <img src="imgs/local.png">Instituto Federal de Educação, Ciência e Tecnologia - Campus Cubatão
-                                <hr>
-                                <img src="imgs/checked.png">Information technology, associate degree (2017 - 2018)<br/>
-                                <img src="imgs/local.png">Etec de Cubatão
-                            </h3>
-                        </div>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand fixed-bottom navbar-dark bg-dark">
+            <div class="d-flex flex-column flex-md-row justify-content-between collapse justify-content-md-center navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#1" onclick="rolar_para('#1')">
+                            <img src="imgs/home.png" class="img_menu"> <b>Home</b>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#3" onclick="rolar_para('#3')">
+                            <img src="imgs/about.png" class="img_menu"> <b>About</b>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#2" onclick="rolar_para('#2')">
+                            <img src="imgs/star.png" class="img_menu"> <b>Skills</b>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
