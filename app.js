@@ -1,7 +1,11 @@
 class sectionOne extends React.Component {
     render() {
         return (
-            <div className="container">Hello World!</div>
+            <div className="container">
+                <h1>
+                    Hello World!
+                </h1>
+            </div>
         );
     }
 }
@@ -9,4 +13,4 @@ class sectionOne extends React.Component {
 ReactDOM.render(
     <sectionOne />,
     document.getElementById('root')
-  );
+);
