@@ -1,16 +1,19 @@
-class sectionOne extends React.Component {
+class SectionOne extends React.Component {
     render() {
         return (
-            <div className="container">
-                <h1>
-                    Hello World!
-                </h1>
+            <div className="shopping-lists">
+                <h1>Shopping List for</h1>
+                <ul>
+                    <li>Instagram</li>
+                    <li>WhatsApp</li>
+                    <li>Oculus</li>
+                </ul>
             </div>
         );
     }
 }
-
+        
 ReactDOM.render(
-    <sectionOne />,
-    document.getElementById('root')
+    <SectionOne />,
+    document.querySelector("#root")    
 );
