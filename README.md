@@ -1,10 +1,10 @@
 ## Hi there, I'm Victor Barbosa 👋
 
-- 🔭 I'm currently working on Stone
-- 🌱 I'm currently learning React Js, React Native and Nest Js
-- 👯 I'm looking to collaborate with community creating content
+- 🔭 Working at idwall
+- 🌱 Currently learning React Js, React Native and Nest Js
+- 👯 Looking to collaborate with community creating content
 - ⚡ Fun fact: In my free time, I like to play Valorant, watch superhero movies and listen to alternative rock
-- 📍 Currently living in São Paulo
+- 📍 Living in São Paulo
 
 ### Skills
 <div>
