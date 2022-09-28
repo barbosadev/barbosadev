@@ -1,6 +1,5 @@
 ## Hi there, I'm Victor Barbosa 👋
 
-- 🔭 Working at idwall
 - 🌱 Currently learning React Js, React Native and Nest Js
 - 👯 Looking to collaborate with community creating content
 - ⚡ Fun fact: In my free time, I like to play Valorant, watch superhero movies and listen to alternative rock
