@@ -6,7 +6,7 @@
 
 ~ In my free time I code with arduino, practice table tennis and enjoy with my cats, Marvin and Sage, and my dog Billy
 
-- Currently learning Spring Boot and Angular
+~ Currently learning Spring Boot and Angular
 
 ### 💻 I can work with...
 - JavaScript, TypeScript and PHP
