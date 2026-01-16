@@ -4,7 +4,9 @@
 
 ~ Born in Santos, living in São Paulo, Brazil
 
-~ In my free time I code with arduino, practice table tennis and play with my cats (Marvin and Sage)
+~ In my free time I code with arduino, practice table tennis and enjoy with my cats, Marvin and Sage, and my dog Billy
+
+- Currently learning Spring Boot and Angular
 
 ### 💻 I can work with...
 - JavaScript, TypeScript and PHP
